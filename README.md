@@ -43,7 +43,7 @@ The program will open a window with a button to select a file for scanning. Once
 
 ## Contributing
 
-If you find a bug or have a feature request, please open an issue on GitHub.
+If you find a bug or have a feature request, please open an issue on GitHub. Also Assist In Improving the script .
 
 ## License
 
