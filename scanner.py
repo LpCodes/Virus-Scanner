@@ -22,7 +22,6 @@ layout = [
 # Create the window
 window = sg.Window('Virus Scanner', layout)
 
-# Define a function to scan the file using VirusTotal
 def scan_file(file_path):
     try:
         # Open the file and read its contents
