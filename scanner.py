@@ -44,7 +44,7 @@ def scan_file(file_path):
         while True:
             response = requests.get(url, params=params)
             result = response.json()
-            if result['scan_date'] != '1970-01-01 00:00:00':
+            if 'scan_date' in result and result['scan_date'] != '1970-01-01 00:00:00':
                 break
             time.sleep(15)
 
@@ -54,6 +54,7 @@ def scan_file(file_path):
             sg.Print(f'{scanner}: {result["result"]}')
     except Exception as e:
         sg.Print(f'Error: {e}')
+        pass
 
 # Event loop
 while True:
