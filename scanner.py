@@ -69,7 +69,7 @@ while True:
         if not os.path.isfile(file_path):
             sg.Print('Error: Please select a valid file.')
         else:
-            sg.Print(f'Scanning file: {file_path}')
+            sg.Print(f'Scanning file: {file_path} Please wait ..')
             scan_file(file_path)
 
 # Close the window
