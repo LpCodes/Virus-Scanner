@@ -28,7 +28,7 @@ This is a simple Python program that allows you to scan a file for viruses using
 ### On Windows
 
 1. Open the command prompt by pressing the Windows key + R and typing `cmd`, then press Enter.
-2. Type `setx VT_API_KEY <your-api-key>` and press Enter. This will set the `VT_API_KEY` environment variable to your API key.
+2. Type `setx /M VT_API_KEY <your-api-key>` and press Enter. This will set the `VT_API_KEY` environment variable to your API key.
 3. Verify that the environment variable has been set correctly by typing `echo %VT_API_KEY%` and pressing Enter. This should print the value of the `VT_API_KEY` environment variable.
 
 ### On Linux
