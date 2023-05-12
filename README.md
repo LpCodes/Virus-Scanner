@@ -1,4 +1,3 @@
-
 # Virus Scanner
 
 This is a simple Python program that allows you to scan a file for viruses using the VirusTotal API.
@@ -18,18 +17,25 @@ This is a simple Python program that allows you to scan a file for viruses using
    git clone https://github.com/YOUR_USERNAME/virus-scanner.git
    ```
 
-3. Create a new file called `secrets_key.py` in the same directory as the `scanner.py` script.
-4. In `secrets.py`, define a variable called `API_KEY` and set its value to your VirusTotal API key:
-
-   ```
-   API_KEY = 'your_api_key_here'
-   ```
-
-5. Install the required Python packages:
+3. Install the required Python packages:
 
    ```
    pip install PySimpleGUI requests
    ```
+
+## Setting up the VT_API_KEY environment variable
+
+### On Windows
+
+1. Open the command prompt by pressing the Windows key + R and typing `cmd`, then press Enter.
+2. Type `setx VT_API_KEY <your-api-key>` and press Enter. This will set the `VT_API_KEY` environment variable to your API key.
+3. Verify that the environment variable has been set correctly by typing `echo %VT_API_KEY%` and pressing Enter. This should print the value of the `VT_API_KEY` environment variable.
+
+### On Linux
+
+1. Open a terminal window.
+2. Type `export VT_API_KEY=<your-api-key>` and press Enter. This will set the `VT_API_KEY` environment variable to your API key.
+3. Verify that the environment variable has been set correctly by typing `echo $VT_API_KEY` and pressing Enter. This should print the value of the `VT_API_KEY` environment variable.
 
 ## Usage
 
